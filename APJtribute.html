@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <style>
+        .wrap{
+            margin-top:80px;
+            }
+        a{
+            text-decoration:none;
+            }
+        a:hover{
+  text-decoration:none;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            var points$
+            $("button").click(function(){   // Jquery Click function               
+                points$=prompt("Wish to add more points?"); 
+                $("ul").append("<li>"+points$+"</li>"); // appending prompted value to ul section
+         
+            });
+        });
+    </script>
+</head>
+<body>
+  <div class="container-fluid wrap">
+    <h1 class="text-center">APJ ABDUL KALAM</h1>
+    <hr>
+    <h3 class="text-center text-primary">Missile man of India</h3>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="jumbotron">
+          <figure>
+            <img class="img-responsive img-rounded" caption="11th President of India" src="http://images.indianexpress.com/2015/07/abdul-kalam-l.jpg" />
+            <figcaption class="text-center text-danger">11th President of India</figcaption>
+            <figcaption class="text-center text-danger">25 July 2002 – 25 July 2007</figcaption>
+          </figure>
+        </div>
+        <!--Jumbotron Div-->
+      </div>
+      <!--col Div-->
+    </div>
+    <!-- Row Div-->
+    <div class="col-md-8 col-md-offset-2">
+      <h3>Points to Ponder</h3>
+      <ul>
+        <li><b>Full name:</b> Avul Pakir Jainulabdeen Abdul Kalam</li>
+        <li><b>Date Of Birth:</b > 15 October 1931</li>
+      <li><b>Profession:</b> Professor, Author, Aerospace scientist </li>
+        <li><b>Hometown:</b> Rameshwaram</li>
+        <li><b>Website:</b> abdulkalam.com</li>
+      </ul>
+      <button type="submit" class="btn btn-default">Add more Points</button>
+      <hr>
+      <label>Want to know more<a href="https://en.wikipedia.org/wiki/A._P._J._Abdul_Kalam"> Click Here</a></label>
+    </div>
+
+  </div>
+</body>
+</html>
